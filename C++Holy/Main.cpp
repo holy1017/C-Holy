@@ -49,9 +49,29 @@ int main(int argc, char** argv) {
 	p->Draw();
 
 	//======================================== 2차원 배열
-	C006* c6 = new C006(55,25);
+	C006* c6 = new C006(55,45);
+
 	//c6->test();
 	c6->print();
+
+	//c6->line(3, 3, 30, 20);
+	//c6->print();
+	//
+	//c6->reset();
+	//c6->line(3, 3, 20, 30);
+	//c6->print();
+	//
+	//c6->reset();
+	//c6->line(20, 30,3, 3 );
+	//c6->print();
+
+	c6->reset();
+	for (int i = 2; i < 50; i+=3)
+	{
+	c6->circle(20, 20,  i);
+	}
+	c6->print();
+
 }
 
 //enum class Day { mon, tue, wed, thu, fri, sat, sun };

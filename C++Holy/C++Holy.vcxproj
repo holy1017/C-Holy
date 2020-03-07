@@ -143,6 +143,7 @@
     <ClCompile Include="Cex004.cpp" />
     <ClCompile Include="Cex005.cpp" />
     <ClCompile Include="Cex006.cpp" />
+    <ClCompile Include="Cex007.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>

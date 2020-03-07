@@ -1,6 +1,7 @@
+#include <iostream>
+
 #include "Cex001.cpp"
 #include "Cex004.cpp"
-#include <iostream>
 #include "Cex005.cpp"
 #include "Cex006.cpp"
 using namespace std;
@@ -48,16 +49,17 @@ int main(int argc, char** argv) {
 	p->Draw();
 
 	//======================================== 2차원 배열
-	C006 c6 =  C006(7,3);
-	
+	C006* c6 = new C006(55,25);
+	//c6->test();
+	c6->print();
 }
 
-enum class Day { mon, tue, wed, thu, fri, sat, sun };
-
-Day operator++(Day& d)
-{
-	return d == Day::sun ? Day::mon : Day{ ++d };
-}
-
-Day today = Day::sat;
-Day tomorrow = ++today;
+//enum class Day { mon, tue, wed, thu, fri, sat, sun };
+//
+//Day operator++(Day& d)
+//{
+//	return d == Day::sun ? Day::mon : Day{ ++d };
+//}
+//
+//Day today = Day::sat;
+//Day tomorrow = ++today;
